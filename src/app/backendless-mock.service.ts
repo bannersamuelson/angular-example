@@ -8,26 +8,30 @@ export class BackendlessMockService implements InMemoryDbService {
         firstName: 'Brian',
         lastName: 'McGee',
         position: 'CEO',
-        directReports: [2, 3]
+        directReports: [2, 3],
+        compensation: 150000
       },
       {
         id: 2,
         firstName: 'Homer',
         lastName: 'Thompson',
         position: 'Dev Manager',
-        directReports: [4]
+        directReports: [4],
+        compensataion: 120000
       },
       {
         id: 3,
         firstName: 'Rock',
         lastName: 'Strongo',
-        position: 'Lead Tester'
+        position: 'Lead Tester',
+        compensataion: 100000
       },
       {
         id: 4,
         firstName: 'Max',
         lastName: 'Power',
-        position: 'Junior Software Engineer'
+        position: 'Junior Software Engineer',
+        compensataion: 60000
       }
     ];
     return { employees };

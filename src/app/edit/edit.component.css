@@ -1,0 +1,16 @@
+h1 {
+  color: rgb(86, 128, 193)
+}
+
+mat-form-field {
+
+  display: grid;
+  grid-template-columns: 1;
+}
+
+button {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
