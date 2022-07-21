@@ -1,0 +1,14 @@
+h3 {
+  background-color: grey;
+  color: white;
+  padding: .7rem;
+  font-size: 15px;
+}
+
+mat-card-content {
+  margin-left: 30px;
+}
+
+mat-card-header {
+  color: rgba(255, 21, 0, 0.592)
+}

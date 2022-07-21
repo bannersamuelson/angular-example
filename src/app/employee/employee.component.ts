@@ -7,8 +7,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { EditModalComponent } from '../edit/edit.component';
 import { DeleteModalComponent } from '../delete/delete.component';
 
-const employee_cache = new Map<number, Employee>();
-
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',

@@ -1,19 +1,19 @@
-import {async, TestBed} from '@angular/core/testing';
-import {Component, Input} from '@angular/core';
+import { async, TestBed } from '@angular/core/testing';
+import { Component, Input } from '@angular/core';
 
-import {EmployeeListComponent} from './employee-list.component';
-import {EmployeeService} from '../employee.service';
+import { EmployeeListComponent } from './employee-list.component';
+import { EmployeeService } from '../employee.service';
 
-@Component({selector: 'app-employee', template: ''})
+@Component({ selector: 'app-employee', template: '' })
 class EmployeeComponent {
   @Input('employee') employee: any;
 }
 
-@Component({selector: 'app-mat-grid-list', template: ''})
+@Component({ selector: 'app-mat-card', template: '' })
 class GridListComponent {
 }
 
-@Component({selector: 'app-mat-grid-tile', template: ''})
+@Component({ selector: 'app-mat-tile', template: '' })
 class GridTileComponent {
 }
 
@@ -29,7 +29,7 @@ describe('EmployeeListComponent', () => {
         GridTileComponent
       ],
       providers: [
-        {provide: EmployeeService, useValue: employeeServiceSpy}
+        { provide: EmployeeService, useValue: employeeServiceSpy }
       ],
     }).compileComponents();
   }));

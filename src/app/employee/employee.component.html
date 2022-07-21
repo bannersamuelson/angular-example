@@ -7,7 +7,7 @@
 
   <mat-card-content *ngIf="directReports.size">
     <mat-list>
-      <h3 mat-subheader>Reports</h3>
+      <h3>Direct Reports:</h3>
       <mat-list-item *ngFor="let emp of directReports; last as last">
         <h4 mat-line>{{emp.firstName}} {{emp.lastName}}, {{emp.position}}</h4>
         <a (click)="onEditClicked(emp)" aria-label="edit">
