@@ -3,10 +3,7 @@
     <mat-card-title>{{employee.firstName}} {{employee.lastName}}, {{employee.position}}</mat-card-title>
     <mat-card-subtitle>Employee ID:{{employee.id}} Direct Reports:{{employee.directReports}}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-    <!-- <dl>
-      <dt>Job Title</dt>
-      <dd>{{employee.position}}</dd>
-    </dl> -->
-  </mat-card-content>
+
+  <mat-card-content *ngIf="directReports.size">
+
 </mat-card>

@@ -16,13 +16,15 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { DeleteComponent } from './components/delete/delete.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    DeleteComponent
+    DeleteComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
