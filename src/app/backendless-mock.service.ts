@@ -1,4 +1,4 @@
-import {InMemoryDbService} from 'angular-in-memory-web-api';
+import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 export class BackendlessMockService implements InMemoryDbService {
   createDb() {
@@ -30,6 +30,6 @@ export class BackendlessMockService implements InMemoryDbService {
         position: 'Junior Software Engineer'
       }
     ];
-    return {employees};
+    return { employees };
   }
 }
