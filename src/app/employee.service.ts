@@ -1,13 +1,22 @@
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Injectable} from '@angular/core';
-import {from, Observable, throwError} from 'rxjs';
-import {catchError, flatMap} from 'rxjs/operators';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { from, Observable, Subject, throwError } from 'rxjs';
+import { catchError, flatMap } from 'rxjs/operators';
 
-import {Employee} from './employee';
+import { Employee } from './employee';
 
+interface EditOrDeleteEvent {
+  evt: 'edit' | 'delete';
+  emp: Employee;
+}
 @Injectable()
 export class EmployeeService {
   private url = '/api/employees';
+
+  private cache = new Map<number, Employee>();
+
+  // either 'delete' or edit
+  public empEditEvent = new Subject<EditOrDeleteEvent>();
 
   constructor(private http: HttpClient) {
   }

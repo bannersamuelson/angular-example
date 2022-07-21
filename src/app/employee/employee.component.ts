@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Employee } from '../employee';
 import { Observable } from 'rxjs';
 import { EmployeeService } from '../employee.service';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-employee',
@@ -36,7 +37,6 @@ export class EmployeeComponent {
         if (visited.has(child_id)) {
           continue;
         }
-        // Value is cached in employee.service.ts so we aren't doing O(N^2) api calls.
         let child = this.employeeService.get(child_id);
         if (child instanceof Observable) {
           child = await child.toPromise();
