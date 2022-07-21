@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { from, Observable, Subject, throwError } from 'rxjs';
-import { catchError, flatMap, mapTo } from 'rxjs/operators';
+import { catchError, flatMap } from 'rxjs/operators';
 
 import { Employee } from './employee';
 

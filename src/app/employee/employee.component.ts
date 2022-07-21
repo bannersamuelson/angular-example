@@ -32,7 +32,7 @@ export class EmployeeComponent implements OnInit {
   }
 
   private async initReports(): Promise<[Set<Employee>, number]> {
-    // BFS for employees who report to the employee owned by this component
+
     const directReports = [];
     for (const subordinate_id of this.employee.directReports ?? []) {
       let child = this.employeeService.get(subordinate_id);
@@ -50,7 +50,7 @@ export class EmployeeComponent implements OnInit {
         if (visited.has(child_id)) {
           continue;
         }
-        // Value is cached in employee.service.ts so we aren't doing O(N^2) api calls.
+
         let child = this.employeeService.get(child_id);
         if (child instanceof Observable) {
           child = await child.toPromise();

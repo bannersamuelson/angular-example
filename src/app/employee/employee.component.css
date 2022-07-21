@@ -4,10 +4,13 @@ h3 {
   padding: .7rem;
   font-size: 15px;
   margin: 0;
+
 }
 
 mat-card-content {
   margin-left: 30px;
+  border-top: solid 1px rgb(241, 241, 241);
+  padding-top: 1rem;
 }
 
 mat-card-header {
@@ -16,4 +19,8 @@ mat-card-header {
 
 mat-list-item {
   background: rgb(246, 246, 246)
+}
+
+a {
+  cursor: pointer;
 }
