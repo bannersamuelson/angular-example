@@ -1,0 +1,17 @@
+h1 {
+  color: rgb(86, 128, 193)
+}
+
+
+.mat-dialog-actions {
+  justify-content: center;
+}
+
+.mat-dialog-container {
+  max-width: 75%;
+}
+
+button {
+  border: solid 1px lightgray;
+  box-shadow: 2px 2px lightgray;
+}
