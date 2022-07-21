@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './delete.component.html',
   styleUrls: ['./delete.component.css']
 })
-export class DeleteComponent implements OnInit {
+export class DeleteModalComponent {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  onCancel() {
+
   }
-
 }

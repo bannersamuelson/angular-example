@@ -16,7 +16,7 @@ export class EmployeeService {
 
   private cache = new Map<number, Employee>();
 
-  // Either 'delete' or edit
+  // 'delete' or edit
   public empEditEvent = new Subject<EditOrDeleteEvent>();
 
   constructor(private http: HttpClient) {
